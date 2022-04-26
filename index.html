@@ -101,15 +101,50 @@
                       About me
                     </a>
                   </li>
-                  <li class="nav-item mx-2">
+
+                  <li class="nav-item dropdown dropdown-hover mx-2">
                     <a
                       class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center"
-                      href="#myprojects"
+                      href="javascript:;"
+                      id="dropdownMenuPages"
+                      data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
                       My Projects
+                      <img
+                        src="./assets/img/down-arrow-dark.svg"
+                        alt="down-arrow"
+                        class="arrow ms-1"
+                      />
                     </a>
+                    <div
+                      class="dropdown-menu dropdown-menu-animation dropdown-md p-3 border-radius-lg mt-0 mt-lg-3"
+                      aria-labelledby="dropdownMenuPages"
+                    >
+                      <div class="d-none d-lg-block">
+                        <div
+                          class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center px-0"
+                        >
+                          <div class="d-inline-block">
+                            <a
+                              class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center"
+                              href="#codding"
+                              aria-expanded="false"
+                            >
+                              Codding Projects </a
+                            ><a
+                              class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center"
+                              href="#design"
+                              aria-expanded="false"
+                            >
+                              UX/UI Design Projects
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </li>
+
                   <li class="nav-item mx-2">
                     <a
                       class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center"
@@ -136,7 +171,9 @@
                       </p>
                     </a>
                   </li>
-                  <li class=" d-flex justify-content-*-end cursor-pointer align-items-center">
+                  <li
+                    class="d-flex justify-content-*-end cursor-pointer align-items-center"
+                  >
                     <a
                       class="nav-link nav-link-icon me-2"
                       href="https://www.linkedin.com/in/larissavspinheiro/"
@@ -153,8 +190,6 @@
                       </p>
                     </a>
                   </li>
-                  
-                  </li>
                 </ul>
               </div>
             </div>
@@ -164,7 +199,6 @@
       </div>
     </div>
 
-
     <header class="header-2">
       <div
         class="page-header min-vh-75 relative"
@@ -173,8 +207,8 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-7 text-center mx-auto">
-              <h1 class="text-white pt-3 mt-n5 ">Hi!</h1>
-              <p class="lead text-white mt-3 ">
+              <h1 class="text-white pt-3 mt-n5">Hi!</h1>
+              <p class="lead text-white mt-3">
                 I'm Larissa Pinheiro <br />
                 Frontend Developer and UX Designer
               </p>
@@ -240,76 +274,119 @@
       </div>
     </header>
 
-<!-- -------- START Features w/ icons and text on left & gradient title and text on right -------- -->
+    <!-- -------- START Features w/ icons and text on left & gradient title and text on right -------- -->
 
-<section class="py-9" id="aboutme">
-
-  <div class="container py-6">
-  <div class="row text-center" style="margin-top: -6rem;">
-    <div class="col-12">
-      <a href="#" class="avatar rounded-circle" style="height: 9.375rem; width: 9.375rem;">
-        <img alt="Image placeholder" src="./assets/img/me.jpg">
-      </a>
-    </div>
-  </div>
-</div>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6">
-        <h3 class="text-gradient text-primary mb-0 mt-2" >About me</h3>
-        <p>Larissa Pinheiro is a talented individual who seeks to explore new opportunities and accept challenges to enhance personal development. She is a Frontend developer with an emphasis on JavaScript, Advanced CSS and UX Design! <br> <br>
-        She is a BSc. in Psychology from Universidade Potiguar. Currently, part of Tera school of technology, acting as a facilitator and helping new developers learn Full Stack development. Focusing on applying Psychology to UX Design and programing to make web pages and applications accessible for everyone.</p>
-      </div>
-      <div class="col-lg-6 mt-lg-0 mt-5 ps-lg-0 ps-0">
-        <div class="p-3 info-horizontal">
-          <div class="icon icon-shape rounded-circle bg-gradient-primary shadow text-center">
-            <i class="fas fa-user opacity-10" alt="User Icon"></i>
-          </div>
-          <div class="description ps-3">
-            <p class="mb-0">Soft Skills: Communication, Teamwork, Problem-solving, Adaptability, Work Ethics and Time Management. </p>
-          </div>
-        </div>
-        <div class="p-3 info-horizontal">
-          <div class="icon icon-shape rounded-circle bg-gradient-primary shadow text-center">
-            <i class="fas fa-object-group opacity-10" alt="Object Group representing what she knows about design"></i>
-          </div>
-          <div class="description ps-3">
-            <p class="mb-0">Experience: Adobe Photoshop, Figma, Adobe Illustrator, Adobe Premiere and Adobe After Effects.
-          </div>
-        </div>
-        <div class="p-3 info-horizontal">
-          <div class="icon icon-shape rounded-circle bg-gradient-primary shadow text-center">
-            <i class="fas fa-code opacity-10" alt="Code Icon representing what she codes"></i>
-          </div>
-          <div class="description ps-3">
-            <p class="mb-0">Codding Experience: HTML, CSS/SCSS, JavaScript, Bootstrap and React. <br> Open to learn new languages.
-          </div>
-        </div>
-        <div class="p-3 info-horizontal">
-          <div class="icon icon-shape rounded-circle bg-gradient-primary shadow text-center">
-            <i class="fas fa-user-graduate opacity-10" alt="User icon using a graduate hat"></i>
-          </div>
-          <div class="description ps-3">
-            <p class="mb-0">Passionate about learning new things. And always ready to learn a new programing language or new graphic or video editor.</p>
+    <section class="py-9" id="aboutme">
+      <div class="container py-6">
+        <div class="row text-center" style="margin-top: -6rem">
+          <div class="col-12">
+            <a
+              href="#"
+              class="avatar rounded-circle"
+              style="height: 9.375rem; width: 9.375rem"
+            >
+              <img alt="Image placeholder" src="./assets/img/me.jpg" />
+            </a>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<!-- -------- END Features w/ icons and text on left & gradient title and text on right -------- -->
 
-<!-- Projects -->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 class="text-gradient text-primary mb-0 mt-2">About me</h3>
+            <p>
+              Larissa Pinheiro is a talented individual who seeks to explore new
+              opportunities and accept challenges to enhance personal
+              development. She is a Frontend developer with an emphasis on
+              JavaScript, Advanced CSS and UX Design! <br />
+              <br />
+              She is a BSc. in Psychology from Universidade Potiguar. Currently,
+              part of Tera school of technology, acting as a facilitator and
+              helping new developers learn Full Stack development. Focusing on
+              applying Psychology to UX Design and programing to make web pages
+              and applications accessible for everyone.
+            </p>
+          </div>
+          <div class="col-lg-6 mt-lg-0 mt-5 ps-lg-0 ps-0">
+            <div class="p-3 info-horizontal">
+              <div
+                class="icon icon-shape rounded-circle bg-gradient-primary shadow text-center"
+              >
+                <i class="fas fa-user opacity-10" alt="User Icon"></i>
+              </div>
+              <div class="description ps-3">
+                <p class="mb-0">
+                  Soft Skills: Communication, Teamwork, Problem-solving,
+                  Adaptability, Work Ethics and Time Management.
+                </p>
+              </div>
+            </div>
+            <div class="p-3 info-horizontal">
+              <div
+                class="icon icon-shape rounded-circle bg-gradient-primary shadow text-center"
+              >
+                <i
+                  class="fas fa-object-group opacity-10"
+                  alt="Object Group representing what she knows about design"
+                ></i>
+              </div>
+              <div class="description ps-3">
+                <p class="mb-0">
+                  Experience: Adobe Photoshop, Figma, Adobe Illustrator, Adobe
+                  Premiere and Adobe After Effects.
+                </p>
+              </div>
+            </div>
+            <div class="p-3 info-horizontal">
+              <div
+                class="icon icon-shape rounded-circle bg-gradient-primary shadow text-center"
+              >
+                <i
+                  class="fas fa-code opacity-10"
+                  alt="Code Icon representing what she codes"
+                ></i>
+              </div>
+              <div class="description ps-3">
+                <p class="mb-0">
+                  Codding Experience: HTML, CSS/SCSS, JavaScript, Bootstrap and
+                  React. <br />
+                  Open to learn new languages.
+                </p>
+              </div>
+            </div>
+            <div class="p-3 info-horizontal">
+              <div
+                class="icon icon-shape rounded-circle bg-gradient-primary shadow text-center"
+              >
+                <i
+                  class="fas fa-user-graduate opacity-10"
+                  alt="User icon using a graduate hat"
+                ></i>
+              </div>
+              <div class="description ps-3">
+                <p class="mb-0">
+                  Passionate about learning new things. And always ready to
+                  learn a new programing language or new graphic or video
+                  editor.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- -------- END Features w/ icons and text on left & gradient title and text on right -------- -->
 
-    <section class="py-5" style="margin-top: -6rem;" id="myprojects">
+    <!-- Projects -->
+
+    <section class="py-5" style="margin-top: -6rem">
       <div class="container">
         <div class="row">
           <div class="row text-center my-sm-5 mt-5">
             <div class="col-lg-6 mx-auto">
               <h2 class="text-primary text-gradient mb-0">My Projects</h2>
-              <h2 class="">Some of the pages I've created</h2>
-
+              <h2 class="" id="codding">HTML, CSS and JavaScript projects</h2>
             </div>
           </div>
         </div>
@@ -347,7 +424,10 @@
                 </a>
               </div>
               <div class="col-md-6 mt-md-0 mt-6">
-                <a href="https://iaarkz.github.io/projeto-dio-css-flexbox/" target="_blank">
+                <a
+                  href="https://iaarkz.github.io/projeto-dio-css-flexbox/"
+                  target="_blank"
+                >
                   <div class="card move-on-hover">
                     <img
                       class="w-100"
@@ -361,7 +441,10 @@
                 </a>
               </div>
               <div class="col-md-6 mt-md-0 mt-6">
-                <a href="https://iaarkz.github.io/100daysjavascript/" target="_blank">
+                <a
+                  href="https://iaarkz.github.io/100daysjavascript/"
+                  target="_blank"
+                >
                   <div class="card move-on-hover">
                     <img
                       class="w-100"
@@ -382,8 +465,8 @@
                 Presentation Pages for Company, Sign In Pages, Contact and more
               </h4>
               <h6 class="text-secondary">
-                These is just a small selection of the multiple possibilities
-                I can work with.
+                These is just a small selection of the multiple possibilities I
+                can work with.
               </h6>
             </div>
           </div>
@@ -391,9 +474,108 @@
       </div>
     </section>
 
-<!-- Footer -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="row text-center my-sm-5 mt-5">
+            <div class="col-lg-6 mx-auto">
+              <h2 class="" id="design">UX/UI and Design projects</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-3 mx-auto mt-md-0 mt-5">
+            <div class="position-sticky" style="top: 100px !important">
+              <h4 class="">
+                UX/UI designs for Landing Pages, Apps, Stream Overlays and more
+              </h4>
+              <h6 class="text-secondary">
+                Anything from Figma to Adobe Photoshop, Adobe Illustrator or
+                Adobe After Effect
+              </h6>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="row mt-4">
+              <div class="col-md-6">
+                <a
+                  href="https://www.figma.com/file/suUHjhvBf0hgUMG6di9wRt/Landing-Page"
+                  target="_blank"
+                >
+                  <div class="card move-on-hover">
+                    <img
+                      class="w-100"
+                      src="./assets/img/examples/ux-landing-page.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="mt-2 ms-2">
+                    <h6 class="mb-0">Landing Page</h6>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-6 mt-md-0 mt-5">
+                <a
+                  href="https://www.figma.com/file/gF6TVogalVeqEnG1VAf6NM/Food-Ordering-Project"
+                  target="_blank"
+                >
+                  <div class="card move-on-hover">
+                    <img
+                      class="w-100"
+                      src="./assets/img/examples/ux-food-app.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="mt-2 ms-2">
+                    <h6 class="mb-0">Food App</h6>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-6 mt-md-0 mt-6">
+                <a
+                  href="https://www.figma.com/file/AwQ4ikNojPTK4r0GxjvS6k/Instagram-Carousel-Feed"
+                  target="_blank"
+                >
+                  <div class="card move-on-hover">
+                    <img
+                      class="w-100"
+                      src="./assets/img/examples/instagram-carousel.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="mt-2 ms-2">
+                    <h6 class="mb-0">Carousel for Instagram</h6>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-6 mt-md-0 mt-6">
+                <a
+                  href="https://www.figma.com/file/KlU11YIO0vq5GjeHk2x4NL/Stream"
+                  target="_blank"
+                >
+                  <div class="card move-on-hover">
+                    <img
+                      class="w-100"
+                      src="./assets/img/examples/stream-screens.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="mt-2 ms-2">
+                    <h6 class="mb-0">Stream Overlays</h6>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<footer class="footer pt-5 mt-5">
+    <!-- Footer -->
+
+    <footer class="footer pt-5 mt-5">
       <hr class="horizontal dark mb-5" />
       <div class="container">
         <div class="row">
@@ -412,7 +594,11 @@
                     href="https://www.linkedin.com/in/larissavspinheiro/"
                     target="_blank"
                   >
-                    <i class="fab fa-linkedin text-lg opacity-8" title="Conect with me on LinkedIn" alt="Linkedin logo with a link to connect with me."></i>
+                    <i
+                      class="fab fa-linkedin text-lg opacity-8"
+                      title="Conect with me on LinkedIn"
+                      alt="Linkedin logo with a link to connect with me."
+                    ></i>
                   </a>
                 </li>
 
@@ -422,7 +608,11 @@
                     href="https://github.com/iaarkz"
                     target="_blank"
                   >
-                    <i class="fab fa-github text-lg opacity-8" title="Conect with me on GitHub" alt="GitHub logo with a link to connect with me."></i>
+                    <i
+                      class="fab fa-github text-lg opacity-8"
+                      title="Conect with me on GitHub"
+                      alt="GitHub logo with a link to connect with me."
+                    ></i>
                   </a>
                 </li>
 
@@ -432,7 +622,11 @@
                     href="https://twitter.com/_aarkz"
                     target="_blank"
                   >
-                    <i class="fab fa-twitter text-lg opacity-8" title="Conect with me on Twitter" alt="Twitter logo with a link to connect with me."></i>
+                    <i
+                      class="fab fa-twitter text-lg opacity-8"
+                      title="Conect with me on Twitter"
+                      alt="Twitter logo with a link to connect with me."
+                    ></i>
                   </a>
                 </li>
 
@@ -442,26 +636,25 @@
                     href="https://www.instagram.com/aarkz/"
                     target="_blank"
                   >
-                    <i class="fab fa-instagram text-lg opacity-8" title="Conect with me on Instagram" alt="Instagram logo with a link to connect with me."></i>
+                    <i
+                      class="fab fa-instagram text-lg opacity-8"
+                      title="Conect with me on Instagram"
+                      alt="Instagram logo with a link to connect with me."
+                    ></i>
                   </a>
                 </li>
-
-                
               </ul>
             </div>
           </div>
 
           <div class="col-md-2 col-sm-6 col-6 mb-4">
             <div>
-              <h6 class="text-gradient text-primary text-sm">Contact and More Links</h6>
+              <h6 class="text-gradient text-primary text-sm">
+                Contact and More Links
+              </h6>
               <ul class="flex-column ms-n3 nav">
                 <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    href="#aboutme"
-                  >
-                    About Me
-                  </a>
+                  <a class="nav-link" href="#aboutme"> About Me </a>
                 </li>
 
                 <li class="nav-item">
@@ -515,7 +708,6 @@
         </div>
       </div>
     </footer>
-
 
     <script
       src="./assets/js/core/popper.min.js"
